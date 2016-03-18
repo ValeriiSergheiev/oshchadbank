@@ -1,0 +1,210 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px) {
+	.map-btn {
+		display: none;
+	}
+
+	.logo img {
+		top: 56px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1232px) {
+	.side-bar {
+		//width: 40px;
+		right: -200px;
+		transition: .5s;
+		&:hover {
+			//width: 240px;
+			right: 0;
+		}
+	}
+
+	.page-container {
+		margin-right: 40px;
+		transition: .5s;
+		position: relative;
+	}
+
+	.page-hover-in {
+		position: fixed;
+		display: block;
+		top: 0;
+		left: 0;
+		right: 40px;
+		bottom: 0;
+		background-color: #000;
+		z-index: 20;
+		opacity: .6;
+		transition: 900ms;
+		animation: sitehoverin 500ms forwards; 
+	}
+
+	.page-hover-out {
+		display: block;
+		opacity: 0;
+		z-index: -10;
+		transition: 900ms;
+		animation: sitehoverout 500ms forwards; 
+	}
+
+	@keyframes sitehoverin {
+		from {right: 40px;}
+		to {right: 240px;}
+	}
+
+	@keyframes sitehoverout {
+		from {right: 240px;}
+		to {right: 40px;}
+	}
+	
+	.logo img {
+		top: 56px;
+	}
+
+	.map-btn {
+		display: none;
+	}
+
+	footer {
+		padding-top: 0;
+		h6 {
+			margin: 60px 0 0;
+		}
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 1008px) {
+	.container {
+		padding: 0 20px;
+	}
+
+	.top-bar, header {
+		height: 100px;
+	}
+
+	.side-bar {
+		display: none;
+	}
+
+	.page-container, .inner-page-container {
+		margin-right: 0 !important;
+	}
+
+	.top-menu-mob {
+		margin-top: 22px;
+		li {
+			width: 250px;
+			a {
+				font-size: em(20);
+			}
+		}
+	}
+
+	.top-menu-mob-wrapper .top-menu-triangle {
+		top: 43px;
+		right: -166px;
+	}
+
+	.logo img {
+		left: 20px;
+		top: 20px;
+	}
+
+	.slide1 h1, .slide2 h1, .slide3 h1 {
+		font-size: em(63);
+	}
+
+	.slide-banner {
+		right: 30px;
+		bottom: -125px;
+		overflow: hidden;
+	}
+
+	.taxes {
+		margin-top: 137px;
+	}
+
+	form, .nav-tabs {
+		display: none;
+	}
+
+	#online-form {
+		width: auto;
+	}
+
+	.form-mob {
+		display: block;
+		margin: 0 auto;
+		a {
+			display: block;
+			//height: 85px;
+			width: 100%;
+			background-color: #fff;
+			border: 2px solid #dcdf3c;
+			font-family: futura-bold;
+			font-size: em(36);
+			text-align: center;
+			color: #000;
+			padding: 20px 0;
+			&:first-child {
+				margin-top: 50px;
+			}
+			&:last-child {
+				margin: 25px 0 45px 0;
+			}
+			&:hover {
+				background-color: #dcdf3c;
+				//border: none;
+			}
+			&:active {
+				background-color: #c2c52e;
+				//border: none;
+			}
+		}
+	}
+
+	.promo-1 .promo-1-left img {
+		margin-top: 20px;
+	}
+
+	.taxes-btn, #deposit-btn {
+		display: none;
+	}
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.table-taxes {
+		font-size: 12px;
+	}
+
+	.slide-banner {
+		left: 0px;
+		top: 585px;
+		max-width: 320px;
+		overflow: hidden;
+
+	}
+
+	.promo-1 h3 {
+		font-size: em(40);
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+/* Custom Media Height */
+@media only screen and (max-height: 680px) {
+	.inner-side-bar {
+		font-size: 12px;
+		min-height: 585px;
+	}
+}

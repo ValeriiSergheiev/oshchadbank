@@ -1,0 +1,188 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$check-name: 'check';
+$check-x: 52px;
+$check-y: 33px;
+$check-offset-x: -52px;
+$check-offset-y: -33px;
+$check-width: 17px;
+$check-height: 16px;
+$check-total-width: 90px;
+$check-total-height: 70px;
+$check-image: '../images/sprite.png';
+$check: (52px, 33px, -52px, -33px, 17px, 16px, 90px, 70px, '../images/sprite.png', 'check', );
+$fb-name: 'fb';
+$fb-x: 0px;
+$fb-y: 0px;
+$fb-offset-x: 0px;
+$fb-offset-y: 0px;
+$fb-width: 26px;
+$fb-height: 26px;
+$fb-total-width: 90px;
+$fb-total-height: 70px;
+$fb-image: '../images/sprite.png';
+$fb: (0px, 0px, 0px, 0px, 26px, 26px, 90px, 70px, '../images/sprite.png', 'fb', );
+$inst-name: 'inst';
+$inst-x: 26px;
+$inst-y: 0px;
+$inst-offset-x: -26px;
+$inst-offset-y: 0px;
+$inst-width: 26px;
+$inst-height: 26px;
+$inst-total-width: 90px;
+$inst-total-height: 70px;
+$inst-image: '../images/sprite.png';
+$inst: (26px, 0px, -26px, 0px, 26px, 26px, 90px, 70px, '../images/sprite.png', 'inst', );
+$play-name: 'play';
+$play-x: 0px;
+$play-y: 26px;
+$play-offset-x: 0px;
+$play-offset-y: -26px;
+$play-width: 26px;
+$play-height: 26px;
+$play-total-width: 90px;
+$play-total-height: 70px;
+$play-image: '../images/sprite.png';
+$play: (0px, 26px, 0px, -26px, 26px, 26px, 90px, 70px, '../images/sprite.png', 'play', );
+$tel-name: 'tel';
+$tel-x: 72px;
+$tel-y: 27px;
+$tel-offset-x: -72px;
+$tel-offset-y: -27px;
+$tel-width: 17px;
+$tel-height: 20px;
+$tel-total-width: 90px;
+$tel-total-height: 70px;
+$tel-image: '../images/sprite.png';
+$tel: (72px, 27px, -72px, -27px, 17px, 20px, 90px, 70px, '../images/sprite.png', 'tel', );
+$tw-name: 'tw';
+$tw-x: 26px;
+$tw-y: 26px;
+$tw-offset-x: -26px;
+$tw-offset-y: -26px;
+$tw-width: 26px;
+$tw-height: 26px;
+$tw-total-width: 90px;
+$tw-total-height: 70px;
+$tw-image: '../images/sprite.png';
+$tw: (26px, 26px, -26px, -26px, 26px, 26px, 90px, 70px, '../images/sprite.png', 'tw', );
+$uah-name: 'uah';
+$uah-x: 72px;
+$uah-y: 0px;
+$uah-offset-x: -72px;
+$uah-offset-y: 0px;
+$uah-width: 18px;
+$uah-height: 27px;
+$uah-total-width: 90px;
+$uah-total-height: 70px;
+$uah-image: '../images/sprite.png';
+$uah: (72px, 0px, -72px, 0px, 18px, 27px, 90px, 70px, '../images/sprite.png', 'uah', );
+$uah-sm-name: 'uah_sm';
+$uah-sm-x: 0px;
+$uah-sm-y: 52px;
+$uah-sm-offset-x: 0px;
+$uah-sm-offset-y: -52px;
+$uah-sm-width: 12px;
+$uah-sm-height: 18px;
+$uah-sm-total-width: 90px;
+$uah-sm-total-height: 70px;
+$uah-sm-image: '../images/sprite.png';
+$uah-sm: (0px, 52px, 0px, -52px, 12px, 18px, 90px, 70px, '../images/sprite.png', 'uah_sm', );
+$uah-sm-black-name: 'uah_sm_black';
+$uah-sm-black-x: 12px;
+$uah-sm-black-y: 52px;
+$uah-sm-black-offset-x: -12px;
+$uah-sm-black-offset-y: -52px;
+$uah-sm-black-width: 12px;
+$uah-sm-black-height: 18px;
+$uah-sm-black-total-width: 90px;
+$uah-sm-black-total-height: 70px;
+$uah-sm-black-image: '../images/sprite.png';
+$uah-sm-black: (12px, 52px, -12px, -52px, 12px, 18px, 90px, 70px, '../images/sprite.png', 'uah_sm_black', );
+$usd-name: 'usd';
+$usd-x: 52px;
+$usd-y: 0px;
+$usd-offset-x: -52px;
+$usd-offset-y: 0px;
+$usd-width: 20px;
+$usd-height: 33px;
+$usd-total-width: 90px;
+$usd-total-height: 70px;
+$usd-image: '../images/sprite.png';
+$usd: (52px, 0px, -52px, 0px, 20px, 33px, 90px, 70px, '../images/sprite.png', 'usd', );
+$spritesheet-width: 90px;
+$spritesheet-height: 70px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($check, $fb, $inst, $play, $tel, $tw, $uah, $uah-sm, $uah-sm-black, $usd, );
+$spritesheet: (90px, 70px, '../images/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Here are example usages in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+`display: inline-block` sprite:
+<img class="icon-home" />
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
